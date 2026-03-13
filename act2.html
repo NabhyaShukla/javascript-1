@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Activity 2</title>
+
+    <style>
+        .demo-text {
+            color: black;
+            background-color: lightpink;
+            padding: 1rem 2rem;
+            border: 2px solid brown;
+            max-width: fit-content;
+            font-size: large;
+
+        }
+    </style>
 </head>
 <body>
+
+    <p id="demo"></p>
+
+    <button onclick="addNumbers()">Add</button>
+
+    <script>
+
+        function addNumbers() {
+
+        var x = 5;
+        var y = 10;
+        var z = x + y;
+
+        document.getElementById("demo").innerHTML = "The sum of " + x + " and " + y +" is: " + z;
+        document.getElementById("demo").classList.add("demo-text");
+
+        }
+    </script>
     
 </body>
 </html>
