@@ -4,16 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activity 1</title>
+
+    <style>
+        .red-text {
+            color:salmon ;
+            background-color: lightcoral;
+            padding: 1rem 2rem;
+            border: 2px solid black;
+            max-width: fit-content;
+        }
+    </style>
 </head>
 <body>
 
     <p id="demo1"></p>
     <p id="demo2"></p>
 
-    <script>
+    <button onclick="writeTopara()">Change</button>
 
+    <script>
+    function writeTopara() {
         document.getElementById("demo1").innerHTML = "Hello World";
         document.getElementById("demo2").innerHTML = "Welcome To Javascript!";
+        document.getElementById("demo1").classList.add("red-text");
+
+    }
     </script>
     
 </body>
